@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ATELIER VAUCLUSE — Luxury Architecture & Timeless Interiors</title>
+  <meta name="description" content="Atelier Vaucluse is an award-winning architectural and interior design studio crafting timeless, quiet-luxury residences shaped by light, walnut, stone and space.">
+  <meta name="keywords" content="luxury interior design, architecture studio, quiet luxury, minimal architecture, walnut interior, natural stone, contemporary residence">
+  <meta name="theme-color" content="#1A1613">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="ATELIER VAUCLUSE — Luxury Architecture & Timeless Interiors">
+  <meta property="og:description" content="Spaces designed to be experienced. Quiet luxury, natural stone, warm walnut and architectural precision.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-poster.jpg">
+
+  <!-- Editorial Typography: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       CUSTOM CURSOR (Desktop Only)
+       ======================================================================== -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       FLOATING HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="header" id="site-header">
+    <div class="header__container">
+      <!-- Studio Brand Identity -->
+      <a href="#hero" class="brand" aria-label="Atelier Vaucluse Home">
+        <span class="brand__name">VAUCLUSE</span>
+        <span class="brand__subtitle">Atelier d'Architecture</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Primary Navigation">
+        <ul class="nav__list">
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#philosophy" class="nav__link">About</a></li>
+          <li><a href="#spaces" class="nav__link">Spaces</a></li>
+          <li><a href="#materials" class="nav__link">Services</a></li>
+          <li><a href="#process" class="nav__link">Process</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Ambient Room Tone Audio Toggle -->
+        <button type="button" class="audio-toggle" id="audio-toggle" aria-label="Toggle ambient atmosphere sound" title="Ambient Atmosphere">
+          <div class="soundwave" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="audio-label">Sound</span>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Toggle mobile navigation" aria-expanded="false">
+          <span class="menu-trigger__line"></span>
+          <span class="menu-trigger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       FULLSCREEN MOBILE NAVIGATION OVERLAY
+       ======================================================================== -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="#projects" class="mobile-menu__link"><span class="mobile-menu__index">01</span> Projects</a>
+      <a href="#philosophy" class="mobile-menu__link"><span class="mobile-menu__index">02</span> About</a>
+      <a href="#spaces" class="mobile-menu__link"><span class="mobile-menu__index">03</span> Spaces</a>
+      <a href="#materials" class="mobile-menu__link"><span class="mobile-menu__index">04</span> Services</a>
+      <a href="#process" class="mobile-menu__link"><span class="mobile-menu__index">05</span> Process</a>
+      <a href="#contact" class="mobile-menu__link"><span class="mobile-menu__index">06</span> Contact</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <span>ZÜRICH · MILANO · NEW YORK</span>
+      <span>EST. 2018</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         SECTION 01 — CINEMATIC FULLSCREEN HERO
+         ====================================================================== -->
+    <section class="hero" id="hero" aria-label="Cinematic Interior Introduction">
+      <div class="hero__media-wrapper">
+        <video 
+          id="hero-video" 
+          class="hero-video" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="metadata" 
+          poster="assets/images/hero-poster.jpg">
+          <!-- Primary: Local User AI Video -->
+          <source src="assets/video/Luxury_contemporary_interior_ani…_1080p_20260930120408.mp4" type="video/mp4">
+          <!-- Secondary Fallback: Ambient Architectural Motion Loop -->
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-large-windows-and-a-view-41484-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__eyebrow reveal-fade-up">
+            <span>Interiors</span>
+            <span class="hero__eyebrow-divider"></span>
+            <span>Architecture</span>
+            <span class="hero__eyebrow-divider"></span>
+            <span>Experience</span>
+          </div>
+
+          <h1 class="hero__heading heading-hero reveal-fade-up reveal-delay-1">
+            Spaces Designed<br>to Be Experienced.
+          </h1>
+
+          <p class="hero__description lead-text reveal-fade-up reveal-delay-2">
+            Timeless interiors shaped by light, material and architectural precision.
+          </p>
+
+          <div class="hero__actions reveal-fade-up reveal-delay-3">
+            <a href="#projects" class="editorial-link editorial-link--light">
+              Explore Our Work <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle Bottom Scroll Indicator -->
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span>Scroll to Explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 02 — PHILOSOPHY (EDITORIAL ASYMMETRICAL)
+         ====================================================================== -->
+    <section class="section section--secondary" id="philosophy" aria-label="Our Studio Philosophy">
+      <div class="container">
+        <div class="philosophy-grid">
+          <!-- Text Column -->
+          <div class="philosophy__text">
+            <span class="eyebrow reveal-fade-up">Our Philosophy</span>
+            <h2 class="heading-section philosophy__heading reveal-fade-up reveal-delay-1">
+              "Luxury is not<br>about excess."
+            </h2>
+
+            <blockquote class="philosophy__quote reveal-fade-up reveal-delay-2">
+              "It is about proportion.
+              <span>Material.</span>
+              <span>Light.</span>
+              <span>Silence.</span>
+              <span>And the way a space makes you feel."</span>
+            </blockquote>
+
+            <div class="philosophy__narrative reveal-fade-up reveal-delay-3">
+              <p>
+                True quiet luxury does not demand attention; it commands presence through restraint. We eliminate the superficial to reveal the profound dialogue between warm American walnut, honed geological limestone, and the quiet choreography of natural light.
+              </p>
+              <p>
+                Every line is considered. Every shadow is deliberate. We design sanctuaries that age with dignity, providing an acoustic and sensory refuge from an accelerated world.
+              </p>
+            </div>
+
+            <div style="margin-top: 40px;" class="reveal-fade-up reveal-delay-4">
+              <a href="#spaces" class="editorial-link">
+                Discover The Spaces <span class="arrow-icon">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Architectural Image Column -->
+          <div class="philosophy__media reveal-fade-up reveal-delay-2">
+            <div class="architectural-frame">
+              <img 
+                src="assets/images/architecture.jpg" 
+                alt="Architectural staircase with cantilevered walnut steps and natural limestone" 
+                loading="lazy">
+            </div>
+            <div class="media-caption">
+              <span>Plate 01 — Atrium Geometry</span>
+              <span>Natural Stone & Walnut</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 03 — THE SPACES (FOUR MAJOR SPACES)
+         ====================================================================== -->
+    <section class="section" id="spaces" aria-label="The Four Spaces">
+      <div class="container">
+        <div class="spaces-header">
+          <div>
+            <span class="eyebrow reveal-fade-up">Spatial Sequence</span>
+            <h2 class="heading-section reveal-fade-up reveal-delay-1">The Spaces</h2>
+          </div>
+          <p class="lead-text reveal-fade-up reveal-delay-2" style="max-width: 440px;">
+            A cinematic progression through four distinct spatial atmospheres, each sculpted with organic warmth and architectural integrity.
+          </p>
+        </div>
+
+        <!-- Asymmetric Editorial Grid -->
+        <div class="spaces-grid">
+          <!-- Space 01: Living -->
+          <article class="space-card space-card--1 reveal-fade-up" data-space-id="living">
+            <div class="space-card__image-box">
+              <img 
+                src="assets/images/living-room.jpg" 
+                alt="Contemporary open plan luxury living room" 
+                class="space-card__image" 
+                loading="lazy">
+              <div class="space-card__overlay"></div>
+            </div>
+            <div class="space-card__meta">
+              <div>
+                <span class="space-card__number">01</span>
+                <h3 class="space-card__title">LIVING</h3>
+              </div>
+              <span class="space-card__action">Explore →</span>
+            </div>
+          </article>
+
+          <!-- Space 02: Kitchen -->
+          <article class="space-card space-card--2 reveal-fade-up reveal-delay-1" data-space-id="kitchen">
+            <div class="space-card__image-box">
+              <img 
+                src="assets/images/kitchen.jpg" 
+                alt="Monolithic stone kitchen island with warm walnut cabinetry" 
+                class="space-card__image" 
+                loading="lazy">
+              <div class="space-card__overlay"></div>
+            </div>
+            <div class="space-card__meta">
+              <div>
+                <span class="space-card__number">02</span>
+                <h3 class="space-card__title">KITCHEN</h3>
+              </div>
+              <span class="space-card__action">Explore →</span>
+            </div>
+          </article>
+
+          <!-- Space 03: Bedroom -->
+          <article class="space-card space-card--3 reveal-fade-up" data-space-id="bedroom">
+            <div class="space-card__image-box">
+              <img 
+                src="assets/images/bedroom.jpg" 
+                alt="Quiet luxury master bedroom with walnut acoustic panelling" 
+                class="space-card__image" 
+                loading="lazy">
+              <div class="space-card__overlay"></div>
+            </div>
+            <div class="space-card__meta">
+              <div>
+                <span class="space-card__number">03</span>
+                <h3 class="space-card__title">BEDROOM</h3>
+              </div>
+              <span class="space-card__action">Explore →</span>
+            </div>
+          </article>
+
+          <!-- Space 04: Architecture -->
+          <article class="space-card space-card--4 reveal-fade-up reveal-delay-1" data-space-id="architecture">
+            <div class="space-card__image-box">
+              <img 
+                src="assets/images/architecture.jpg" 
+                alt="Minimalist architectural corridor and sunlit atrium" 
+                class="space-card__image" 
+                loading="lazy">
+              <div class="space-card__overlay"></div>
+            </div>
+            <div class="space-card__meta">
+              <div>
+                <span class="space-card__number">04</span>
+                <h3 class="space-card__title">ARCHITECTURE</h3>
+              </div>
+              <span class="space-card__action">Explore →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 04 — LIVING SPACE (IMMERSIVE FULL-WIDTH)
+         ====================================================================== -->
+    <section class="immersive-living" id="space-living" aria-label="Living Space Experience">
+      <div class="immersive-living__media">
+        <img 
+          src="assets/images/living-room.jpg" 
+          alt="Expansive panoramic view of contemporary walnut living room" 
+          class="immersive-living__img" 
+          loading="lazy">
+        <div class="immersive-living__overlay"></div>
+      </div>
+
+      <div class="immersive-living__content">
+        <div class="immersive-living__panel">
+          <span class="eyebrow reveal-fade-up" style="color: var(--color-accent-hover);">Space 01</span>
+          <h2 class="heading-section immersive-living__heading reveal-fade-up reveal-delay-1">LIVING</h2>
+          <p class="immersive-living__sub reveal-fade-up reveal-delay-2">
+            "Light, proportion and effortless comfort."
+          </p>
+
+          <p class="lead-text reveal-fade-up reveal-delay-3" style="color: rgba(244, 239, 235, 0.85);">
+            Framed by continuous floor-to-ceiling glazing, the living pavilion dissolves the boundary between interior sanctuary and nature. Warm walnut partitions balance the monumental scale of honed travertine stone surfaces.
+          </p>
+
+          <div class="spec-list reveal-fade-up reveal-delay-4">
+            <div class="spec-item">
+              <span class="spec-item__index">01</span>
+              <span class="spec-item__title">Natural Stone</span>
+              <span class="spec-item__desc">Honed Navona Travertine Hearth</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-item__index">02</span>
+              <span class="spec-item__title">Walnut</span>
+              <span class="spec-item__desc">Bookmatched Acoustic Wall Paneling</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-item__index">03</span>
+              <span class="spec-item__title">Soft Textiles</span>
+              <span class="spec-item__desc">Belgian Linen & Bouclé Upholstery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 05 — KITCHEN (ASYMMETRICAL SPECIFICATIONS)
+         ====================================================================== -->
+    <section class="section section--surface" id="space-kitchen" aria-label="Kitchen Culinary Architecture">
+      <div class="container">
+        <div class="kitchen-grid">
+          <div class="kitchen-media reveal-fade-up">
+            <div class="architectural-frame">
+              <img 
+                src="assets/images/kitchen.jpg" 
+                alt="Walnut cabinetry and monolithic marble kitchen island" 
+                loading="lazy">
+            </div>
+            <div class="media-caption">
+              <span>Plate 02 — Culinary Pavilion</span>
+              <span>Calacatta & American Walnut</span>
+            </div>
+          </div>
+
+          <div class="kitchen-content">
+            <span class="eyebrow reveal-fade-up">Space 02 — Culinary Sanctuary</span>
+            <h2 class="heading-section reveal-fade-up reveal-delay-1">
+              "Crafted Around<br>the Ritual of Living."
+            </h2>
+
+            <p class="lead-text reveal-fade-up reveal-delay-2" style="margin-top: 24px;">
+              Designed not merely as a functional workspace, but as an architectural centerpiece. Seamless walnut millwork conceals modern culinary technology, allowing pure geometric mass and tactile stone to define the atmosphere.
+            </p>
+
+            <div class="kitchen-specs reveal-fade-up reveal-delay-3">
+              <div class="arch-spec-row">
+                <span class="arch-spec-label">Material</span>
+                <span class="arch-spec-value">American Walnut Joinery + Monolithic Honed Calacatta Marble</span>
+              </div>
+              <div class="arch-spec-row">
+                <span class="arch-spec-label">Light</span>
+                <span class="arch-spec-value">Direct Daylight + Concealed 2700K Warm Architectural Cove Lighting</span>
+              </div>
+              <div class="arch-spec-row">
+                <span class="arch-spec-label">Style</span>
+                <span class="arch-spec-value">Contemporary Warm Minimalism & Seamless Concealment</span>
+              </div>
+              <div class="arch-spec-row">
+                <span class="arch-spec-label">Hardware</span>
+                <span class="arch-spec-value">Brushed Champagne Brass Fixtures with Hand-Applied Satin Patina</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 06 — MASTER BEDROOM (CALMER KIND OF LUXURY)
+         ====================================================================== -->
+    <section class="section bedroom-section" id="space-bedroom" aria-label="Master Bedroom Sanctuary">
+      <div class="container">
+        <div class="bedroom-grid">
+          <div class="bedroom-details">
+            <span class="eyebrow reveal-fade-up">Space 03 — Rest & Tranquility</span>
+            <h2 class="bedroom-quote reveal-fade-up reveal-delay-1">
+              "A quieter kind<br>of luxury."
+            </h2>
+
+            <p class="lead-text reveal-fade-up reveal-delay-2">
+              The master suite is an exercise in acoustic stillness and tonal harmony. Warm walnut vertical battens diffuse sound while concealing ambient LED illumination, creating an envelopment of gentle warmth at dusk.
+            </p>
+
+            <div class="spec-list reveal-fade-up reveal-delay-3" style="border-top-color: var(--color-border-light);">
+              <div class="spec-item" style="border-bottom-color: var(--color-border-light);">
+                <span class="spec-item__index" style="color: var(--color-accent);">Atmosphere</span>
+                <span class="spec-item__title" style="color: var(--color-text-main);">Acoustic Calm</span>
+                <span class="spec-item__desc">Sound-Dampening Timber Slat Architecture</span>
+              </div>
+              <div class="spec-item" style="border-bottom-color: var(--color-border-light);">
+                <span class="spec-item__index" style="color: var(--color-accent);">Surfaces</span>
+                <span class="spec-item__title" style="color: var(--color-text-main);">Tactile Linen</span>
+                <span class="spec-item__desc">Unbleached Oatmeal Bedding & Wool Underlay</span>
+              </div>
+              <div class="spec-item" style="border-bottom-color: var(--color-border-light);">
+                <span class="spec-item__index" style="color: var(--color-accent);">Horizon</span>
+                <span class="spec-item__title" style="color: var(--color-text-main);">Framed Garden</span>
+                <span class="spec-item__desc">Floor-to-Ceiling Glass with Sheer Linen Drape</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bedroom-media reveal-fade-up reveal-delay-2">
+            <img 
+              src="assets/images/bedroom.jpg" 
+              alt="Serene master bedroom with warm slatted wood wall and natural linen" 
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 07 — MATERIALS & DETAILS
+         ====================================================================== -->
+    <section class="section" id="materials" aria-label="Architectural Materials and Details">
+      <div class="container">
+        <div class="spaces-header">
+          <div>
+            <span class="eyebrow reveal-fade-up">Material Honesty</span>
+            <h2 class="heading-section reveal-fade-up reveal-delay-1">Materials & Details</h2>
+          </div>
+          <p class="lead-text reveal-fade-up reveal-delay-2" style="max-width: 480px;">
+            We believe timeless architecture is born from materials that age with grace. Each element is selected for tactile depth, geological integrity and enduring patina.
+          </p>
+        </div>
+
+        <!-- Editorial Material Composition -->
+        <div class="materials-layout">
+          <!-- 01 Walnut -->
+          <div class="material-card reveal-fade-up" data-material="walnut">
+            <div class="material-card__image-box">
+              <img src="assets/images/material-walnut.jpg" alt="American Walnut wood grain texture" class="material-card__image" loading="lazy">
+              <div class="material-card__overlay"></div>
+            </div>
+            <div class="material-card__info">
+              <h3 class="material-card__title">Walnut</h3>
+              <p class="material-card__desc">Warm American timber with hand-rubbed organic satin oil finish.</p>
+            </div>
+          </div>
+
+          <!-- 02 Natural Stone -->
+          <div class="material-card reveal-fade-up reveal-delay-1" data-material="stone">
+            <div class="material-card__image-box">
+              <img src="assets/images/material-stone.jpg" alt="Honed Navona travertine stone texture" class="material-card__image" loading="lazy">
+              <div class="material-card__overlay"></div>
+            </div>
+            <div class="material-card__info">
+              <h3 class="material-card__title">Natural Stone</h3>
+              <p class="material-card__desc">Honed Italian travertine with porous geological character.</p>
+            </div>
+          </div>
+
+          <!-- 03 Marble -->
+          <div class="material-card reveal-fade-up reveal-delay-2" data-material="marble">
+            <div class="material-card__image-box">
+              <img src="assets/images/material-marble.jpg" alt="Calacatta warm marble texture" class="material-card__image" loading="lazy">
+              <div class="material-card__overlay"></div>
+            </div>
+            <div class="material-card__info">
+              <h3 class="material-card__title">Marble</h3>
+              <p class="material-card__desc">Calacatta with warm golden-taupe veining and honed touch.</p>
+            </div>
+          </div>
+
+          <!-- 04 Linen -->
+          <div class="material-card reveal-fade-up" data-material="linen">
+            <div class="material-card__image-box">
+              <img src="assets/images/material-linen.jpg" alt="Natural raw Belgian linen weave" class="material-card__image" loading="lazy">
+              <div class="material-card__overlay"></div>
+            </div>
+            <div class="material-card__info">
+              <h3 class="material-card__title">Linen</h3>
+              <p class="material-card__desc">Heavyweight unbleached Belgian weave offering acoustic softness.</p>
+            </div>
+          </div>
+
+          <!-- 05 Brass -->
+          <div class="material-card reveal-fade-up reveal-delay-1" data-material="brass">
+            <div class="material-card__image-box">
+              <img src="assets/images/material-brass.jpg" alt="Brushed champagne brass hardware texture" class="material-card__image" loading="lazy">
+              <div class="material-card__overlay"></div>
+            </div>
+            <div class="material-card__info">
+              <h3 class="material-card__title">Brass</h3>
+              <p class="material-card__desc">Hand-brushed champagne brass that develops rich living patina.</p>
+            </div>
+          </div>
+
+          <!-- 06 Architectural Glass -->
+          <div class="material-card reveal-fade-up reveal-delay-2" data-material="glass">
+            <div class="material-card__image-box">
+              <img src="assets/images/material-glass.jpg" alt="Low iron architectural glass reflection" class="material-card__image" loading="lazy">
+              <div class="material-card__overlay"></div>
+            </div>
+            <div class="material-card__info">
+              <h3 class="material-card__title">Glass</h3>
+              <p class="material-card__desc">Ultra-clear low-iron acoustic glazing erasing visual boundaries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 08 — PROCESS (ARCHITECTURAL METHODOLOGY)
+         ====================================================================== -->
+    <section class="section section--secondary" id="process" aria-label="Our Design Process">
+      <div class="container">
+        <div class="process-grid">
+          <!-- Left Column Sticky Title -->
+          <div class="process-sticky">
+            <span class="eyebrow reveal-fade-up">Methodology</span>
+            <h2 class="heading-section reveal-fade-up reveal-delay-1">
+              "From First Sketch<br>to Final Detail."
+            </h2>
+            <p class="lead-text reveal-fade-up reveal-delay-2" style="margin-top: 24px; max-width: 420px;">
+              Our studio operates with rigorous architectural discipline. Every commission begins with intimate spatial listening and concludes with bespoke artisan execution.
+            </p>
+          </div>
+
+          <!-- Right Column Timeline -->
+          <div class="process-timeline">
+            <!-- Step 01 -->
+            <div class="process-step reveal-fade-up">
+              <div class="process-step__indicator">01</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">DISCOVER</h3>
+                <p class="process-step__desc">
+                  Understanding lifestyle, diurnal rituals, spatial needs and the microclimate of the site. We study how natural light will enter throughout the seasons.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="process-step reveal-fade-up reveal-delay-1">
+              <div class="process-step__indicator">02</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">DEFINE</h3>
+                <p class="process-step__desc">
+                  Developing the architectural design language, tactile material palettes, spatial flow, and acoustic parameters tailored exclusively for the residence.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="process-step reveal-fade-up reveal-delay-2">
+              <div class="process-step__indicator">03</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">DESIGN</h3>
+                <p class="process-step__desc">
+                  Translating concepts into millimetric architectural specifications, bespoke joinery details, concealed lighting fixtures, and integrated spatial experiences.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="process-step reveal-fade-up reveal-delay-3">
+              <div class="process-step__indicator">04</div>
+              <div class="process-step__content">
+                <h3 class="process-step__title">DELIVER</h3>
+                <p class="process-step__desc">
+                  Overseeing artisan fabrication and construction on-site. Bringing every stone slab, walnut panel, concealed hinge, and ambient glow into harmonious reality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 09 — PROJECT SHOWCASE (EDITORIAL MASONRY)
+         ====================================================================== -->
+    <section class="section" id="projects" aria-label="Selected Architecture Projects">
+      <div class="container">
+        <div class="spaces-header">
+          <div>
+            <span class="eyebrow reveal-fade-up">Selected Works</span>
+            <h2 class="heading-section reveal-fade-up reveal-delay-1">Project Portfolio</h2>
+          </div>
+          <p class="lead-text reveal-fade-up reveal-delay-2" style="max-width: 440px;">
+            A curated anthology of private residences, lakefront pavilions and urban penthouses completed across Europe and North America.
+          </p>
+        </div>
+
+        <!-- Editorial Asymmetric Masonry Grid -->
+        <div class="project-gallery-grid">
+          <!-- Project 01 -->
+          <article class="project-item project-item--1 reveal-fade-up" data-project-title="Villa No. 01" data-project-loc="Lake Como, Italy" data-project-type="Private Pavilion" data-project-img="assets/images/project-01.jpg" data-project-desc="A glass and walnut cantilevered pavilion perched directly over the water, celebrating monolithic limestone terraces and continuous acoustic timber ceilings.">
+            <img src="assets/images/project-01.jpg" alt="Villa No. 01 Lakefront Pavilion" class="project-item__img" loading="lazy">
+            <div class="project-item__overlay"></div>
+            <div class="project-item__info">
+              <div>
+                <div class="project-item__meta">01 — Lake Como, Italy</div>
+                <h3 class="project-item__title">Villa No. 01</h3>
+              </div>
+              <span class="project-item__cta">View Project →</span>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-item project-item--2 reveal-fade-up reveal-delay-1" data-project-title="Residence 27" data-project-loc="Mayfair, London" data-project-type="Duplex Penthouse" data-project-img="assets/images/project-02.jpg" data-project-desc="Double-height penthouse interior featuring a floor-to-ceiling honed travertine hearth, bookmatched walnut panelling, and framed city views.">
+            <img src="assets/images/project-02.jpg" alt="Residence 27 Penthouse Interior" class="project-item__img" loading="lazy">
+            <div class="project-item__overlay"></div>
+            <div class="project-item__info">
+              <div>
+                <div class="project-item__meta">02 — Mayfair, London</div>
+                <h3 class="project-item__title">Residence 27</h3>
+              </div>
+              <span class="project-item__cta">View Project →</span>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-item project-item--3 reveal-fade-up" data-project-title="The Walnut House" data-project-loc="Kyoto, Japan" data-project-type="Forest Retreat" data-project-img="assets/images/project-03.jpg" data-project-desc="An architectural timber sanctuary immersed in Japanese maples, integrating slatted cedar facade screens, floating eaves and warm interior light.">
+            <img src="assets/images/project-03.jpg" alt="The Walnut House Forest Residence" class="project-item__img" loading="lazy">
+            <div class="project-item__overlay"></div>
+            <div class="project-item__info">
+              <div>
+                <div class="project-item__meta">03 — Kyoto, Japan</div>
+                <h3 class="project-item__title">The Walnut House</h3>
+              </div>
+              <span class="project-item__cta">View Project →</span>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-item project-item--4 reveal-fade-up reveal-delay-1" data-project-title="Coastal Residence" data-project-loc="Cap d'Antibes, France" data-project-type="Mediterranean Villa" data-project-img="assets/images/project-04.jpg" data-project-desc="Minimalist oceanfront architecture where sunlight and sea breeze filter through raw Belgian linen drapes, grounded by seamless polished cream stone floors.">
+            <img src="assets/images/project-04.jpg" alt="Coastal Residence Mediterranean Villa" class="project-item__img" loading="lazy">
+            <div class="project-item__overlay"></div>
+            <div class="project-item__info">
+              <div>
+                <div class="project-item__meta">04 — Cap d'Antibes, France</div>
+                <h3 class="project-item__title">Coastal Residence</h3>
+              </div>
+              <span class="project-item__cta">View Project →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 10 — STATEMENT SECTION (MONUMENTAL CLOSING SCENE)
+         ====================================================================== -->
+    <section class="statement-section" aria-label="Studio Architectural Statement">
+      <div class="statement-bg" aria-hidden="true"></div>
+      <div class="statement-content">
+        <span class="eyebrow reveal-fade-up" style="color: var(--color-accent-hover);">Vision</span>
+        <h2 class="statement-title reveal-fade-up reveal-delay-1">
+          "We create spaces<br>that remain with you."
+        </h2>
+        <p class="statement-desc reveal-fade-up reveal-delay-2">
+          Architecture is not merely what we see; it is what we feel when the world outside falls silent. A harmonious balance between physical matter and the soul of space.
+        </p>
+        <div class="statement-divider reveal-fade-up reveal-delay-3"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 11 — CONTACT & ATELIER INQUIRIES
+         ====================================================================== -->
+    <section class="section" id="contact" aria-label="Contact Atelier Vaucluse">
+      <div class="container">
+        <div>
+          <span class="eyebrow reveal-fade-up">Start a Conversation</span>
+          <h2 class="heading-section reveal-fade-up reveal-delay-1">
+            "Let's create<br>something timeless."
+          </h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Studio Details -->
+          <div class="contact-info reveal-fade-up">
+            <div class="atelier-location">
+              <h3 class="atelier-location__city">Zürich Atelier</h3>
+              <p class="atelier-location__address">
+                Gotthardstrasse 26, Enge<br>
+                8002 Zürich, Switzerland<br>
+                +41 44 280 19 00
+              </p>
+            </div>
+
+            <div class="atelier-location">
+              <h3 class="atelier-location__city">Milano Studio</h3>
+              <p class="atelier-location__address">
+                Via Solferino 18, Brera<br>
+                20121 Milano, Italy<br>
+                +39 02 8739 4120
+              </p>
+            </div>
+
+            <div class="contact-direct">
+              <div>
+                <span class="eyebrow" style="margin-bottom: 6px;">New Commissions</span>
+                <p><a href="mailto:inquiries@ateliervaucluse.com">inquiries@ateliervaucluse.com</a></p>
+              </div>
+              <div style="margin-top: 14px;">
+                <span class="eyebrow" style="margin-bottom: 6px;">Press & Monograph</span>
+                <p><a href="mailto:press@ateliervaucluse.com">press@ateliervaucluse.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Architectural Underline Form -->
+          <div class="contact-form-wrapper reveal-fade-up reveal-delay-1">
+            <form class="contact-form" id="contact-form" novalidate>
+              <!-- Name -->
+              <div class="form-group">
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder=" " required>
+                <label for="contact-name" class="form-label">Full Name *</label>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder=" " required>
+                <label for="contact-email" class="form-label">Email Address *</label>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder=" ">
+                <label for="contact-phone" class="form-label">Phone Number</label>
+              </div>
+
+              <!-- Project Type -->
+              <div class="form-group">
+                <select id="contact-type" name="projectType" class="form-input form-select" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="private-residence">Private Residence / Villa</option>
+                  <option value="penthouse-interior">Penthouse & Apartment Interior</option>
+                  <option value="architectural-renovation">Architectural Renovation</option>
+                  <option value="hospitality-atelier">Boutique Hospitality / Atelier</option>
+                </select>
+                <label for="contact-type" class="form-label">Project Type *</label>
+                <span class="form-select-arrow" aria-hidden="true">↓</span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder=" " rows="3" required></textarea>
+                <label for="contact-message" class="form-label">Vision, Location & Scope *</label>
+              </div>
+
+              <!-- Submit CTA -->
+              <button type="submit" class="form-submit-btn editorial-link editorial-link--brass">
+                Begin Your Project <span class="arrow-icon">→</span>
+              </button>
+
+              <div class="form-status" id="form-status" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER (EDITORIAL DARK LUXURY)
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div>
+          <div class="footer-brand__name">VAUCLUSE</div>
+          <p class="footer-brand__desc">
+            Atelier Vaucluse is an international architecture and interior design practice dedicated to quiet luxury, architectural clarity, and the sensory mastery of natural materials.
+          </p>
+          <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-hover);">
+            Zürich · Milano · New York
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#projects" class="footer-nav__link">Projects</a></li>
+            <li><a href="#philosophy" class="footer-nav__link">About & Philosophy</a></li>
+            <li><a href="#spaces" class="footer-nav__link">The Spaces</a></li>
+            <li><a href="#materials" class="footer-nav__link">Materials & Services</a></li>
+            <li><a href="#process" class="footer-nav__link">Architectural Process</a></li>
+            <li><a href="#contact" class="footer-nav__link">Contact Atelier</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Journal -->
+        <div>
+          <h4 class="footer-heading">Publications & Social</h4>
+          <ul class="footer-nav">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-nav__link">Instagram ↗</a></li>
+            <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-nav__link">Pinterest ↗</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-nav__link">LinkedIn ↗</a></li>
+            <li><a href="https://archdaily.com" target="_blank" rel="noopener noreferrer" class="footer-nav__link">ArchDaily Monograph ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Atelier Vaucluse. All Rights Reserved. Quiet Luxury Architecture.</div>
+        <div>Crafted with Precision & Natural Light</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PROJECT & SPACE QUICK-VIEW LIGHTBOX MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-content-grid">
+        <div class="modal-media">
+          <img id="modal-img" src="" alt="Project Preview">
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="eyebrow" id="modal-eyebrow">Project</span>
+            <h3 class="heading-sub" id="modal-title" style="margin-bottom: 8px;">Villa No. 01</h3>
+            <p id="modal-loc" style="font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 24px;">Lake Como, Italy</p>
+            <p id="modal-desc" class="lead-text" style="font-size: 0.95rem; line-height: 1.75;">Project narrative</p>
+          </div>
+          <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--color-border-light);">
+            <a href="#contact" class="editorial-link modal-inquire-link">
+              Commission Project <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Element for Quiet Luxury Ambient Tone (Muted by default) -->
+  <audio id="ambient-audio" loop preload="none">
+    <source src="https://cdn.freesound.org/previews/563/563814_11861866-lq.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
